@@ -1,166 +1,184 @@
 .vertical-menu {
-   /* width: 200px;Set a width if you like */
-   width:20%;
-  display:inline-block;
-  position: relative;
+  /* width: 200px;Set a width if you like */
+  width:20%;
+ display:inline-block;
+ position: relative;
+ background-color: rgb(168, 25, 25);
+ height: 83%; 
+ position: absolute;
 }
 
 .vertical-menu a {
-  background-color: #eee; /* Grey background color */
-  color: white; /* Black text color */
-  display: block; /* Make the links appear below each other */
-  padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove underline from links */
+ background-color: #eee; /* Grey background color */
+ color: white; /* Black text color */
+ background-color: rgb(168, 25, 25);
+ display: block; /* Make the links appear below each other */
+ padding: 12px; /* Add some padding */
+ text-decoration: none; /* Remove underline from links */
 }
 
 .vertical-menu a:hover {
-  background-color: #ccc; /* Dark grey background on mouse-over */
+ background-color: #ccc; /* Dark grey background on mouse-over */
 }
 
 .vertical-menu a.active {
-  background-color: #4CAF50; /* Add a green color to the "active/current" link */
-  color: white;
+ background-color: #4CAF50; /* Add a green color to the "active/current" link */
+ color: white;
 }
 
 h1, h2, h3 {
-    font-family: sans-serif;
-    font-size: 30px;
-    color: white;
-    display: inline-block;
+   font-family: sans-serif;
+   font-size: 30px;
+   color: white;
+   display: inline-block;
+   float: right;
+}
+img {
+  float: left;
 }
 
 label {
-    font-family: sans-serif;
-    font-size:15px;
-    color: white;
+   font-family: sans-serif;
+   font-size:15px;
+   color: white;
 }
 
 a, li {
-    font-family: sans-serif;
-    font-size: 20px;
-    
+   font-family: sans-serif;
+   font-size: 20px;
+   
 }
 
 body {
-  background: rgb(47, 135, 101);
-    
-	margin: 0 auto;
-	padding:0 auto;
-  display: inline-block;
+ background: rgb(47, 135, 101);
+   
+ margin: 0 auto;
+ padding:0 auto;
+ display: inline-block;
 
 }
 
 p {
-    color:white;
-    font-family: sans-serif;
-    display: inline-block;
-    position: relative;
+   color:white;
+   font-family: sans-serif;
+   float: right;
+   overflow:auto;
 }
 
 .textAlign {
-	text-align: center;
-	}
+ text-align: center;
+ }
 
 .floatRight {
-    float: right;
+   float: right;
 }
 
 
 .bottom {
-  position: absolute;
-  bottom: 0.1px;
-  width: 50%;
- 
+ position: absolute;
+ bottom: 0.1px;
+ width: 50%;
+
 }
 
 /* Style the tab */
 .tab {
-  overflow: hidden;
-  
-  background-color: rgb(204, 255, 255);
+ overflow: hidden;
+ 
+ background-color: rgb(204, 255, 255);
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-  background-color: inherit;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size:18px;
+ background-color: inherit;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ transition: 0.3s;
+ font-size:18px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #17202A ;
-  color: rgb(0, 0, 102);
+ background-color: #17202A ;
+ color: rgb(0, 0, 102);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: rgb(22, 22, 110);
-  color: rgb(0, 0, 102);
+ background-color: rgb(22, 22, 110);
+ color: rgb(0, 0, 102);
 }
 
 button {
-	color: rgb(0, 0, 102);
-	}
+ color: rgb(0, 0, 102);
+ }
 
 /* Style the tab content */
 .tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid rgb(22, 22, 110);
-  border-top: none;
-  
-  
+ display: none;
+ padding: 6px 12px;
+ border: 1px solid rgb(22, 22, 110);
+ border-top: none;
+ 
+ 
 }
 
 .tabtext {
-	font-size: 20px;
-	font-family: 'PT Sans', sans-serif;
-	color: rgb(0, 0, 102);
-	
-	}
+ font-size: 20px;
+ font-family: 'PT Sans', sans-serif;
+ color: rgb(0, 0, 102);
+ 
+ }
 
 .more {
-  
-  padding: 40px 0px;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  clear: both;
+ 
+ padding: 40px 0px;
+ position: relative;
+ text-align: center;
+ width: 100%;
+ clear: both;
 }
 
 .more a {
-  background: rgb(22, 22, 110);
-  border: 1px solid rgb(22, 22, 110);
-  border-radius: 3px;
-  color: white;
-  display: inline-block;
-  margin: 10px;
-  padding: 14px;
-  text-decoration: none;
-  font-family: 'Teko', sans-serif;
+ background: rgb(22, 22, 110);
+ border: 1px solid rgb(22, 22, 110);
+ border-radius: 3px;
+ color: white;
+ display: inline-block;
+ margin: 10px;
+ padding: 14px;
+ text-decoration: none;
+ font-family: 'Teko', sans-serif;
 }
 
+
 .more a:hover {
-  background: white;
-  border: 1px solid rgb(22, 22, 110);
-  color: rgb(23, 23, 165);
+ background: white;
+ border: 1px solid rgb(22, 22, 110);
+ color: rgb(23, 23, 165);
 }
 
 * {
-	box-sizing: border-box;
-	}
+ box-sizing: border-box;
+ }
 
 header {
-    background-color: rgb(192, 209, 198);
-    display: inline-block;
+   background-color: rgb(192, 209, 198);
+   display: inline-block;
+   width: 100%;
+}
+
+footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ height: 2.5rem;            /* Footer height */
+}
     width: 100%;
 }
 
