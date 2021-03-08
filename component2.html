@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <html>
+        <link href="component1.css" rel="stylesheet" type="text/css">
+        <head>
+            <title>Component 2</title>
+        </head>
+        <body>
+            <header>
+                <div>
+                    <div id="logo-container">
+                        <a href="http://www.st-pauls.leicester.sch.uk/" target="_blank"><img src="badge.png"></a>
+                        <h1 style="float: right;">St Paul's Catholic School: Computer Science Department</h1>
+                    </div>
+                </div>
+            </header>
+            <div class="tab button" id="myHeader">
+  		        <button class="tablinks" onclick="openData(event, 'Thinking')">Thinking...</button>
+                <button class="tablinks" onclick="openData(event, 'Programming')">Programming</button>
+                <button class="tablinks" onclick="openData(event, 'Computational Methods')">Computational Methods</button>
+	       </div>
+            
+            <div id="Thinking" class="tabcontent">
+                <ol>
+                    <li><a href="#abstractly">Abstractly</a></li>
+                    <li><a href="#ahead">Ahead</a></li>
+                    <li><a href="#procedurally">Procedurally</a></li>
+                    <li><a href="#logically">Logically</a></li>
+                    <li><a href="#concurrently">Concurrently</a></li>
+                </ol>
+                <div id="abstactly">
+                    <h2>Thinking Abstractly</h2>
+                    <p>This is a filler text</p>
+                </div>
+                <div id="ahead">
+                    <h2>Thinking Ahead</h2>
+                    <p>This is a filler text</p>
+                </div>
+                <div id="procedurally">
+                    <h2>Thinking Procedurally</h2>
+                    <p>This is a filler text</p>
+                </div>
+                <div id="logically">
+                    <h2>Thinking Logically</h2>
+                    <p>This is a filler text</p>
+                </div>
+                <div id="concurrently">
+                
+                </div>
+            </div>
+            
+            <div id="Programming" class="tabcontent">
+                <div id="programming paradigms">
+                    <p>This is a filler text.</p>
+                </div>
+            </div>
+            <div id="Computational Methods" class="tabcontent">
+                <p><strong>Computable Problems</strong> are those which can be solved in a finite number of steps. They are also known as <strong>Tractable Problems</strong></p>
+                <ul>
+                    <li><a href="#recognition">Problem Recognition</a></li>
+                    <li><a href="#solving">Problem Solving</a></li>
+                </ul>
+                <div id="recognition">
+                </div>
+                <div id="solving">
+                    <h2>Problem Solving</h2>
+                    <ul>
+                        <li><a href="#datamining">Data Mining</a></li>
+                        <li><a href="#modelling">Performance Modelling</a></li>
+                        <li><a href="#pipelining">Pipelining</a></li>
+                        <li><a href="#visualisation">Visualisation</a></li>
+                        <li><a href="#backtracking">Backtracking</a></li>
+                        
+                    </ul>
+                    <div id="datamining">
+                        <p>Data Mining is the process of using pattern recognition on vast sets of data to find relationships and trends.
+                        This can be useful for comapanies who wish to maximise profits (as market research). It is also used to spot errors in sets
+                        of data, outliers produced after trawling may be scrutinised as erreoneous data.</p>
+                    </div>
+                    <div id="modelling">
+                        <p> Performance modelling is the process of producing simulations to model situations before implementing these situations
+                        into the real world. This is useful when real world analysis may be dangerous, expensive and inconvenient.</p>
+                    </div>
+                    <div id="pipelining">
+                        <p>Pipelining is where the output of one instruction is the input for the next; it can be used to speed up tasks being carried out.</p>
+                        <p><strong>Instruction Pipelining</strong> is used in CPUs to speed up processor time.</p>
+                        <h3>RISC Processors</h3>
+                        <p>Pipelining is a standard feature in RISC processors: the processor works on different stages of the instructions at the same time, so more instructions can be completed in a shorter period of time. However, in practice RISC processors operate at 
+                        more than one cycle per instruction. The processor might occassionaly stall a result of data dependencies and branch instructions.</p>
+                        <h4>Solutions</h4>
+                        <div>
+                            <p><strong>Superpipelining</strong> is the process of dividing the pipeline into more stages, to speed up the pipeline </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+        <footer>
+            <div class="more">
+    					<a href="specwebsite.html">GO BACK</a>
+    					
+  			</div>
+        </footer>
+        <script>
+            function openData(evt, topicName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(topicName).style.display = "block";
+                evt.currentTarget.topicName += " active";
+            }
+        </script>
+        
+</html>

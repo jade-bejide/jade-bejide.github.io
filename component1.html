@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html>
+    <link rel="stylesheet" type="text/css" href="component1.css">
+    <head>
+        <title>Component 1</title>
+        <header>
+                <div>
+                    <div id="logo-container">
+                        <a href="http://www.st-pauls.leicester.sch.uk/" target="_blank"><img src="badge.png"></a>
+                        <h1 style="float: right;">St Paul's Catholic School: Computer Science Department</h1>
+                    </div>
+                </div>
+        </header>
+        <div class="tab button" id="myHeader">
+  		    <button class="tablinks" onclick="openData(event, 'CPU')">1.1.1 CPU and its Functions</button>
+  		    <button class="tablinks" onclick="openData(event, 'Processor')">1.1.2 Types of Processor</button>
+  		    <button class="tablinks" onclick="openData(event, 'IODevice')">1.1.3 Input and Output Devices and Storage Devices</button>
+		    <button class="tablinks" onclick="openData(event, 'MemoryStorage')">1.1.4 Primary Memory and Storage Devices</button>
+            <button class="tablinks" onclick="openData(event, 'Operating System')">1.2.1 Function and Purpose of the Operating System</button>
+            <button class="tablinks" onclick="openData(event, 'Software')">1.2.2 Utility and Application Software</button>
+            <button class="tablinks" onclick="openData(event,'Web Technologies')">1.3.4 Web Technologies</button>
+            <button class="tablinks" onclick="openData(event,'Boolean Logic')">Boolean Logic</button>
+            <button class="tablinks" onclick="openData(event, 'Flashcards')">Flashcards</button>
+	   </div>
+	
+    </head>
+    <body>
+        
+		
+		
+		
+        
+	
+	<div id="CPU" class="tabcontent tabtext">
+  		
+	<p> The CPU stands for Central Processing Unit. It is often referred to as the 'brains of the computer', processing instructions		using the FDE (Fetch Decode Execute) Cycle.<p>
+	<h1>FETCH</h1>
+	<p>1. The CPU uses the address bus to find memory location of the data/instrcutions to be fetched from main memory.<img src="./cpu_diagram.png" width=300 height=300></p>
+	<p>2. The data bus moves data/instructions from main memory to the MDR</p>
+	<p>3. The MDR copies this into the CIR</p>
+	<h2>DECODE</h2>
+	<p>4. The data bus moves the data/instructions to the CU</p>
+	<p>5. The CU decodes the instruction (looking at the instruction set)</p>
+	<h3>EXECUTE</h3>
+	<p>6. The instruction is executed</p>
+	
+	</div>
+
+	<div id="Processor" class="tabcontent tabtext">	
+  		
+	<p> There are 4 main types of processor architecture you need to know... </p>
+	<ul>
+		
+		<li><a href="#vonNeumann">von Neumann</a></li>
+		<li><a href="#harvard">Harvard</a></li>
+		<li><a href="#risc">RISC processor</a></li>
+		<li><a href="#cisc">CISC processor</a></li>
+		<li><a href="#coprocessors">Co-Processors</a></li>
+	</ul>
+	
+	<h1 id="vonNeumann">von Neumann architecture</h1>
+	<p> The von Neumann architecture makes use of the stored program concept.</p>
+	<p><strong>Stored Program Concept</strong> Machine code instructions are fetched and executed serially by a processor
+	that performs arithmetic and logical operations</p>
+	<p>In the von Neumann architecture, both data and instruction shared the same data bus and memory. This enables programs to be optimised in size, using memory efficiently as well as being able to manufacture it cheaper.</p>
+	
+
+	<h1 id="harvard">Harvard architecture</h1>
+	<p>In the Harvard architecture, parallel data buses and instructions may be used, to improve performance.</p>
+	<p>However, a downside to this is that circuitry is more complex, longer and more expensive to manufacture.</p>
+	<p>As a result, programs tend to be longer and memory is often wasted.</p>
+
+
+	<h1 id="risc">RISC architecture</h1>
+	<p>RISC architrecture has a smaller instruction set of 30-40 instructions (as opposed to CISC). These instructions are simpler in nature and therefore the computer has to do more work, taking up more RAM.</p>
+	<p>However, these instructions only take up one FDE cycle and therefore can make use of pipelining, to become as fast as CISC</p>
+
+
+	<h1 id="cisc">CISC architectue</h1>
+	<p>CISC processors have a large instruction set, with instrructions complex in nature</p>
+	<p>This emables less work for the computer and therefore less RAM is used.</p>
+	<p>However, instructions may take more than one FDE cycle and as a result, CISC processors cannot process from benefit from pipelining.</p>
+
+	<h1 id="coprocessors">Co-Processors</h1>
+        <div class=image1>
+   
+            <img src="./gpu.jpeg" width=300 height=300 class="image1">
+            <div class="overlay1">
+                <div class="text1">GPU</div>
+            </div>
+        </div>
+	<p><strong>Co-processor</strong>A processor that works alongisde the CPU, relieving the load of the CPU to optimise performance.</p>
+	<h2>Graphical Processing Unit</h2>
+	<p>A speicalised electronic circuit which is very efficient at manipulating computer graphics and image processing</p>
+	<p>The GPU is a very large parallel architecture consisting of 1000s of smaller, more efficient cores designed for handling more tasks simultaeneously</p>
+	<p>As a result, it is used in tasks other than image processing such as Machine Learning (A!), Modelling and Cryptocurrency Mining.</p>
+    
+    <h1> Multicore, Parallel and Co-Processor Systems</h1>
+    <h2>What is a multicore system?</h2>
+    <p>A multicore syustem is where a processor has more than one core. The multiple cores on a processor eachj have their own level 1 cache which is stored on that cores
+        and share level 2 cahce which is stored on the processor. Tasks are coordinated by a central task manager.</p>
+	</div>
+
+	<div id="IODevice" class="tabcontent tabtext">
+		<p>An Input device sends information to a CPU for it to process. Common input devices include kyboards, mouses and touchscreens.<img src="./input.jpg" height = 100 width=150></p>
+		<p>A popular way of grading input devices is by suability, speed and place. One speicifc reason for the increasing popularity of touch screen is its
+		easy portability and fast feedback sppeds compared to its predecessors of mouse and keyboard.</p>
+	
+	</div>
+
+	<div id="MemoryStorage" class="tabcontent tabtext">
+		<p><strong>Primary Memory</strong> is directly accesible by the CPU (on the motherbaord). This includes RAM, ROM and Virtual Memory.</p>
+	<p><strong>Secondary Memory</strong> is not directly accessible by the CPU (external to the motherboard. THis includes the Hardrive and SSD - for example.</p>
+	<p><strong>RAM</strong> holds instructions (applications and user data) currently in use by the CPU, as well as the CPU as it is in use by the computer system. It is volatile as it holds data as small charges of electricity in tiny transistors which need to be refreshed every few milliseconds.</p>
+	<p><strong>ROM</strong> is a non-volatile, special memory chip used to store the BIOS and load the operating system.</p>
+	<p><strong>Virtual memory</strong> is hard drive space accessed when RAM becomes full. It operates a lot more slowly than RAM and is often used by the operating system as a lot of programs need to be loaded.</p>
+	
+	<p>The advantages/disadvantages of storage media are measured in terms of speed, cost, durability, reliability, capacity and portability.</p>
+	
+		
+	</div>
+        
+    <div id="Operating System" class="tabcontent tabtext">
+        <p><strong>The Operating System</strong> is a system software program that provides an interface for the computer hardware, applications and user. It provides services such as resource management (i.e memory management, scheduling and device management (via device drivers)) and user interface.</p>
+        <h2>There are Several Types of Operating Systems Which Include...</h2>
+        <ul>
+            <li><a href="#embedded">Embedded System</a></li>
+            <li><a href="#multiuser">Multiuser System</a></li>
+            <li><a href="#multitasking">Multitasking System</a></li>
+            <li><a href="#realtime">Real Time System</a></li>
+            <li><a href="#distributed">Distributed Systems</a></li>
+            <li><a href="#mobile">Mobile Systems</a></li>
+        </ul>
+        
+        <h2>Roles of Operating Systems</h2>
+        <ul>
+        <li><a href="#user">User Interace</a></li>
+        <li><a href="#memory">Memory Management (Paging and Segmentation)</a></li>
+        <li><a href="#scheduling">Scheduling</a></li>
+        <li><a href="#device">Device Drivers</a></li>
+        <li><a href="#virtualmachines">Virtual Machines</a></li>
+        </ul>
+        
+        <div id="user">
+            <p><strong>The User Interface</strong> acts as a level of abstraction between the user and the computer hardware for the usder. It enables the user to interact with the software, hiding its complex features. Two main user interfaces that are learnt a A Level are the Graphical User Interface (GUI) and the Command Line Interface (CLI).</p>
+        </div>
+        <div id="memory">
+        <h1>Memory Management</h1>
+        <p>Memory Managment splits up main memory into sections to optimise the running of programs; this is done by paging and segmentation.
+        Paging is the splitting of memory into fixed sized units (pages) of around 4kiB which is tracked using a memory logic table. Segementation, on the other hand, is the logical splitting of memory into varying length depending on its content. This fills up memory less efficiently than Paging.</p></div>
+        <div id="scheduling">
+            <h1>Scheduling</h1>
+            <p>The scheduling algorithms that you need to know for the OCR specification are: </p>
+            <ul>
+                <li><a href="#roundrobin">Round Robin</a></li>
+                <li><a href="#firstcome">First Come, First Served</a></li>
+                <li><a href="#shortestjob">Shortest Job First</a></li>
+                <li><a href="#shortesttime">Shortest Remaining Time</a></li>
+                <li><a href="#multilevel">Multi-level Feedback Queue</a></li>
+            </ul>
+            <h2 id="roundrobin">Round Robin</h2>
+            <p></p>
+            <h2 id="firstcome">First Come, First Served</h2>
+            <p></p>
+            <h2 id="shortestjob">Shortest Job First</h2>
+            <p></p>
+            <h2 id="shortesttime">Shortest Time Remaining</h2>
+            <p></p>
+            <h2 id="multilevel">Multi-level Feedback Queue</h2>
+            <p></p>
+        </div>
+        <div id="device">
+            <h1>Device Drivers</h1>
+            <h2>What is a Device Driver?</h2>
+            <p>Device Drivers enable the OS and other software to able to interact with hardware devices at an abstracted level - without having to concern itself with the implementation of the device. The device driver extends the functionality of the operating system.</p>
+            <h2>What is a Device Routine?</h2>
+            <p>A program within the device driver which causes the device to perform specific tasks/receive requests from the device that requires the CPU to be interrupted.</p>
+        </div>
+        <div id="virtualmachines">
+            <h1>Virtual Machines</h1>
+            <h2>What is a Virtual Machine?</h2>
+            <p>A host system that runs software that enables other software to run as if they were running on  a hardware system.</p>
+            <h2>What are the Uses of a Virtual Machine?</h2>
+            <ul>
+                <li>Running other operating systems on a single computer</li>
+                <li>To run intermediate code</li>
+                <li>To run incompatible software from architectures that are no longer supported/unavailable (i.e. retro arcade games)</li>
+                <li>To create a test system</li>
+            </ul>
+            <h2>What is Intermediate Code?</h2>
+            <p>Half-way between source code and machine code which is useful in reducing architecture dependency of applications/software.
+
+                For example Java ByteCode is a Java intermediate code which is run on a Java VM.
+            </p>
+        </div>
+    </div>
+
+    
+    <div id="Software" class="tabcontent tabtext"></div>
+    <div id="Web Technologies" class="tabcontent tabtext">
+        <div>
+            <ul>
+                <li><a href="#HTML">HTML</a></li>
+                <li><a href="#CSS">CSS</a></li>
+                <li><a href="#webforms">Web Forms</a></li>
+                <li><a href="#JavaScript">JavaScript</a></li>
+            </ul>
+        </div>
+        <p id="HTML"><strong>HTML (HyperText Markup Language)</strong> is a script language that webpages are written in. It descibes the content and struture of a web page so that a browser is able to interpret and render it for the viewer. It is often used in conjuction with CSS.</p>
+        <p id="CSS"><strong>CSS (Cascading Style Sheets)</strong> is a styling script language used to describe the layout and styles of a webpage. It can be implemented in 3 ways...</p>
+        <ol>
+            <li>Externally</li>
+            <li>Intenally (using style tags)</li>
+            <li>Inline (style="")</li>
+        </ol>
+        <p id="webforms">A <em>Web Form</em> enables websites to collect user input and selections. Input types includes text boxes, check boxes etc. Inputs can be validated and submitted to the website as a search array to find data. The footer contains a email form; <a href="#activity">enter your email</a> to discover how to use a web form interactively.</p>
+    </div>
+        
+    <div id="Boolean Logic" class="tabcontent tabtext">
+        <p><strong>Boolean Variables</strong> are variables that can only have two states (often True or False).</p>
+        <div>
+            <img src="logicgates.png" class="sticky" width=500 height=200 style="float: center;">
+            <div>
+                <ul>
+                    <li>OR: V</li>
+                    <li>AND: ∧</li>
+                    <li>NOT: ¬</li>
+                </ul>
+            </div>
+            <p> Order of priority: Brackets/NOT/AND/OR</p>
+        </div>
+        
+        <div>
+            <h2>Karnaugh Maps</h2>
+            <img src="karnaugh.png" class="zoom" alt="Karnaugh Maps">
+            <p>A version of a truth table for a Boolean expression that makes the expression easy to simplify.</p>
+            <h3>Advantages</h3>
+            <ul>
+                <li>Shows the same data as a truth table in a more compact form.</li>
+                <li>From a Karnaugh Map, we can simplify expressions</li>
+            </ul>
+            <h3>Creating an Expression from a Karnaugh Map</h3>
+            <ol>
+                <li>Group all the adjacent 1s together in accordance to these rules
+                    <ul>
+                        <li>Group sizes must be maximised</li>
+                        <li>Numbe rof groups minimised</li>
+                        <li> Groups must be 2^n</li>
+                        <li>Groups can overlap and wrap</li>
+                    </ul>
+                
+                </li>
+                <li>Ensure each group is distinguishable</li>
+                <li>For each group, work out its expression by focusing on what is common to all cells in the gorup.</li>
+            </ol>
+        </div>
+        
+        
+    </div>
+        
+    <div id="Flashcards" class="tabcontent tabtext">
+        <button onclick="toggle('XISC energy')">Why do RISC processors consume less energy than CISC processors?</button>    
+
+        <div id="XISC energy" style="display: none;"">
+            RISC uses less energy because they use less silicon and has less complex circuitry
+        </div>
+
+        <button onclick="toggle('memory efficient')">What is more memory efficient, CISC or RISC processors and why?</button>
+
+        <div id="memory efficient" style="display: none;"">
+            CISC processors are more memory efficient as they use less instructions to perform the same task, therefore using less memory to execute the same task as RISC processors.
+        </div>
+
+        <button onclick="toggle('uses for GPUs')">Apart from graphic rendering, state one other use for GPUs?</button>
+
+        <div id="uses for GPUs" style="display: none;"">
+            <ul>
+                <li>Bitcoin mining</li>
+                <li>Analysis of Big Data</li>
+            </ul>
+        </div>
+        <!-- <button onclick="toggle('idName')"></button>
+
+        <div id="idName" style="display: none;"">
+            
+        </div>
+        <button onclick="toggle('idName')"></button>
+
+        <div id="idName" style="display: none;"">
+            
+        </div>
+        <button onclick="toggle('idName')"></button>
+
+        <div id="idName" style="display: none;"">
+            
+        </div>
+        <button onclick="toggle('idName')"></button>
+
+        <div id="idName" style="display: none;"">
+            
+        </div> -->
+    </div>
+        
+
+	<script>
+		function openData(evt, topicName) {
+  			var i, tabcontent, tablinks;
+  			tabcontent = document.getElementsByClassName("tabcontent");
+  			for (i = 0; i < tabcontent.length; i++) {
+    			tabcontent[i].style.display = "none";
+  			}
+  		tablinks = document.getElementsByClassName("tablinks");
+  		for (i = 0; i < tablinks.length; i++) {
+    		tablinks[i].className = tablinks[i].className.replace(" active", "");
+  		}
+  		document.getElementById(topicName).style.display = "block";
+  			evt.currentTarget.topicName += " active";
+		}
+        </script>
+        
+        <script>
+        window.onscroll = function() {stickyHeader()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        /* W3 Schools */
+        function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
+        function toggle(idName) {
+            var x = document.getElementById(idName);
+            if (x.style.display == "none") {
+                x.style.display="block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+	</script>
+		
+
+
+
+			
+				
+		<footer>
+            <div style="margin: auto;" id="activity">
+                <form action="submission.html" method="GET">
+                    <h1>Register your interest</h1>
+                    <input id="input" type="text" name="email" required minlength="10">
+                    <input type="submit" value="submit">
+                    <br>
+                    <script>
+                        function openDoc() {
+                            
+                        }
+                    </script>
+                    
+                </form>
+            </div>
+			<div class="more">
+    					<a href="https://www.youtube.com/playlist?list=PLCiOXwirraUBj7HtVHfNZsnwjyZQj97da" target="_blank">CRAIG N DAVE</a>
+    					<a href="https://www.youtube.com/playlist?list=PL04uZ7242_M4cbiwfz5qM_z8vu97txWF6" target="_blank">COMPUTER SCIENCE TUTOR</a>
+    					<a href="https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo" target="_blank">CRASH COURSE COMPUTER SCIENCE</a>
+                        <a href="specwebsite.html">GO BACK</a>
+  			</div>
+			<div>
+				<p>A website by Jadesola Bejide</p>
+			</div>
+            
+		</footer>
+		</body>						
+    
+    <script>
+		function openData(evt, topicName) {
+  			var i, tabcontent, tablinks;
+  			tabcontent = document.getElementsByClassName("tabcontent");
+  			for (i = 0; i < tabcontent.length; i++) {
+    			tabcontent[i].style.display = "none";
+  			}
+  		tablinks = document.getElementsByClassName("tablinks");
+  		for (i = 0; i < tablinks.length; i++) {
+    		tablinks[i].className = tablinks[i].className.replace(" active", "");
+  		}
+  		document.getElementById(topicName).style.display = "block";
+  			evt.currentTarget.topicName += " active";
+		}
+    </script>
+    
+</html>
