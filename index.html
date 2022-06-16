@@ -3,7 +3,13 @@
   <head>
     <meta http-equiv="refresh" content="7; url='https://www.jadesolabejide.dev/portfolio'" />
   </head>
-  <body>
-    <p>Please follow <a href="https://www.jadesolabejide.dev/portfolio">this link</a>.</p>
+   <script>
+     const btnPointer = document.getElementById("refresh");
+     btnPointer.addEventListener("pointerover", function() {
+       location.replace("www.jadesolabejide.dev/portfolio")
+     });
+   <script>
+  <body id="redirect">
+
   </body>
 </html>
